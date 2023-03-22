@@ -4,9 +4,6 @@ description: test action
 runs:
   using: "docker"
   image: "Dockerfile"
-  args:
-    - ${{ inputs.repository }}
-    # - ${{ vars.hej }} # does not work to access vars from here
 inputs:
   repository:
     description: 'Repository name with owner. For example, actions/checkout'

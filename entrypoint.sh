@@ -1,5 +1,5 @@
 #!/bin/bash
 
 echo "test 123"
-repoName=$(echo $1 | sed 's/kardapp\///')
+repoName=$(echo $INPUT_REPOSITORY | sed 's/philipsabri\///')
 echo $repoName
