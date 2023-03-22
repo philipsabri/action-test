@@ -4,3 +4,5 @@ description: test action
 runs:
   using: "docker"
   image: "Dockerfile"
+  args:
+    - ${{ vars.hej }}
