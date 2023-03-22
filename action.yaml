@@ -5,4 +5,9 @@ runs:
   using: "docker"
   image: "Dockerfile"
   args:
-    - ${{ vars.hej }}
+    - ${{ inputs.repository }}
+    # - ${{ vars.hej }} # does not work to access vars from here
+inputs:
+  repository:
+    description: 'Repository name with owner. For example, actions/checkout'
+    default: ${{ github.repository }}
