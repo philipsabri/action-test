@@ -1,4 +1,5 @@
-FROM node:16-alpine
+FROM ubuntu:latest
+
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
