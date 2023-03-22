@@ -1,4 +1,5 @@
 #!/bin/bash
 
 echo "test 123"
-echo $1 | sed 's/kardapp\///'
+repoName=$(echo $1 | sed 's/kardapp\///')
+echo repoName
